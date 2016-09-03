@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Welcome to Fee Portal</title>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+        
+        <!-- custom js-->
+        <script src="js/time.js" type="text/javascript"></script>
+        
+    </head>
+    <body>
+        
+        <div class="jumbotron" style="background-color: #337ab7; color: #ffffff;">
+            <h1 style="margin-left: 22%">Welcome to SGI Fee Portal</h1>
+            <center><p id="time"></p></center>
+            </div>
+        
+        <!-- Login Form-->
+        <div>
+            
+            <form method="POST" action="Main" class="col-md-4 col-md-offset-4 well" style="margin-top: 2%">
+                <div class="form-group">
+                    <label style="color:#337ab7 "><span class="glyphicon glyphicon-tag"></span> Login Type:</label>
+                    <select class="form-control" id="logintype" name="logintype">
+                        <option>Administrator</option>
+                        <!--<option>Director</option>-->
+                        <option>Account Office</option>    
+                    </select>
+                </div>
+                <label style="color:#337ab7 "><span class="glyphicon glyphicon-user"></span> UserName:</label>               
+                <input type="text" name="username" placeholder="Username" class="form-control" required/><br/>
+                <label style="color:#337ab7 "><span class="glyphicon glyphicon-th"></span> Password:</label> 
+                <input type="password" name="password" placeholder="Password" class="form-control" required/><br/>
+                <button type="submit" class="btn btn-primary col-md-offset-4"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+               <!-- <input type="submit" value="Login" class="btn btn-primary col-md-offset-5"/> -->
+                <a href="forgot_passs.html" >Forgot Password?</a>
+            </form>        
+        </div>
+        
+        <!-- Copyright label -->
+        <div class="col-md-offset-9" style="margin-top: 29%">
+            <a href="about_developer.jsp">Having trouble for using this software?</a>
+        </div>
+        
+    </body>
+</html>

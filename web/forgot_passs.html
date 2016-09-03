@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Forget Pass</title>
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="jumbotron" style="background-color: #337ab7; color: #ffffff;">
+            <center><h2>Forget your Password? Don't Worry! We'll Solve it for You..</h2></center>
+        </div>
+        <div>
+            <form method="post" action="forgotPass.jsp" class="col-md-4 col-md-offset-4 well">
+                <div class="form-group">
+                    <label style="color:#337ab7 "><span class="glyphicon glyphicon-tag"></span> Login Type:</label>
+                    <select class="form-control" id="logintype" name="logintype">
+                        <option>Administrator</option>
+                        <option>Account Office</option>    
+                    </select>
+                </div>
+                <label style="color:#337ab7;"><span class="glyphicon glyphicon-user"></span> UserName:</label>               
+                <input type="text" name="username" placeholder="Username" class="form-control" required/><br/>
+                <button type="submit" class="btn btn-primary col-md-offset-4"><span class="glyphicon glyphicon-forward"></span> Proceed</button>
+                
+            </form>
+        </div>
+        
+        
+    </body>
+</html>
